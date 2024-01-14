@@ -1,0 +1,50 @@
+.candidateswrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+.candidatescontainer{
+  display: flex;
+  gap: 32px;
+}
+.candidatesimage{
+  width: 137px;
+  height: 92px;
+}
+.candidatesimage img{
+  width: 100%;
+  height: 100%;
+}
+.uploadh1{
+  color: #000;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 500;
+}
+.uploadp{
+  color: rgba(0, 0, 0, 0.60);
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+}
+.uploadh2{
+  color: rgba(0, 0, 0, 0.60);
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 500;
+}
+.uploadbtn{
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid #0CBB5C;
+  background-color: #0CBB5C;
+  width: 342px;
+  height: 65px;
+  color: #FFF;
+}
+@media screen and (max-width: 750px) {
+  .uploadbtn{
+    width: 300px;
+    margin: 10px auto;
+  }
+}

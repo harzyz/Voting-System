@@ -1,0 +1,114 @@
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.createh1{
+  color: #0CBB5C;
+  text-align: center;
+  font-family: 'Lexend';
+  font-size: 64px;
+}
+.phoneh3{
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+}
+.usertype{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0CBB5C;
+  width: 155px;
+  height: 35px;
+  border-radius: 10px;
+}
+.usertype button{
+  border-radius: 15px;
+  background-color: #0CBB5C;
+  border: none;
+  color: #FFF;
+  width: 55px;
+  padding: 2px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.usertype button:nth-child(1){
+  margin-right: -5px;
+  z-index: 3;
+}
+.usertype button:nth-child(2){
+  border-radius: 15px;
+  background-color: #FFF;
+  border: 1px solid #0CBB5C;
+  color: #0CBB5C;
+  width: 55px;
+}
+.createform{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* text-align: center; */
+}
+.createform input{
+  width: 342px;
+  height: 65px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 1px solid #0CBB5C;
+  background: #FFF
+}
+.createformpassword{
+  position: relative;
+}
+.showicon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+}
+.createform input::placeholder{
+  font-family: 'Inter';
+  font-size: 15px;
+}
+.createform button{
+  width: 342px;
+  height: 65px;
+  color: #FFF;
+  border-radius: 10px;
+  border: 1px solid #0CBB5C;
+  background: #0CBB5C;
+}
+.phonep{
+  font-family: 'Inter';
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 450px) {
+  .wrapper{
+    padding: 20px 15px 20px 15px;
+  }
+  .contain{
+    width: 100%;
+  }
+  .createh1{
+    font-size: 40px;
+  }
+  .createform input{
+    width: 100%;
+  }
+  .createform button{
+    width: 100%;
+  }
+  .showicon{
+    font-size: 20px;
+  }
+}

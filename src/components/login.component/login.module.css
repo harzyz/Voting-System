@@ -1,0 +1,124 @@
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.createh1{
+  color: #0CBB5C;
+  text-align: center;
+  font-family: 'Lexend';
+  font-size: 64px;
+}
+.createh3{
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+  width: 342px;
+  margin: 0 auto;
+  /* margin: 0 auto;
+  width: 100%; */
+}
+.usertype{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0CBB5C;
+  width: 155px;
+  height: 35px;
+  border-radius: 10px;
+}
+.usertype button{
+  border-radius: 15px;
+  background-color: #0CBB5C;
+  border: none;
+  color: #FFF;
+  width: 55px;
+  padding: 2px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.usertype button:nth-child(1){
+  margin-right: -5px;
+  z-index: 3;
+}
+.usertype button:nth-child(2){
+  border-radius: 15px;
+  background-color: #FFF;
+  border: 1px solid #0CBB5C;
+  color: #0CBB5C;
+  width: 55px;
+}
+.createform{
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.recoveryactions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.createforminputs{
+  width: 342px;
+  height: 50px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 1px solid #0CBB5C;
+  background: #FFF
+}
+.createformpassword{
+  position: relative;
+}
+.showicon{
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  font-size: 20px;
+}
+.createform input::placeholder{
+  font-family: 'Inter';
+  font-size: 15px;
+}
+.createform button{
+  width: 342px;
+  height: 50px;
+  color: #FFF;
+  border-radius: 10px;
+  border: 1px solid #0CBB5C;
+  background: #0CBB5C;
+}
+.createp{
+  font-family: 'Inter';
+  font-size: 13px;
+  font-weight: 500;
+}
+/* .remember{
+  width: 10px;
+  height: 10px;
+} */
+@media screen and (max-width: 450px) {
+  .wrapper{
+    padding: 20px 15px 20px 15px;
+  }
+  .contain{
+    width: 100%;
+  }
+  .createh1{
+    font-size: 40px;
+  }
+  .createform input{
+    width: 100%;
+  }
+  .createform button{
+    width: 100%;
+  }
+  .showicon{
+    font-size: 20px;
+  }
+}
