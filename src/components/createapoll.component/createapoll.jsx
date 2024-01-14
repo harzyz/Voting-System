@@ -25,21 +25,21 @@ function CreateAPoll() {
         <label className={styles.formlabel}>Voting Type</label>
         <input className={styles.pollinput} type="text" />
         <div className={styles.smallinputs}>
-          <span>
+          <span className={styles.pollinputdate}>
             <label className={styles.formlabel}>Start Date</label>
             <input className={styles.pollinput} type="date" />
           </span>
-          <span>
+          <span className={styles.pollinputtime}>
             <label className={styles.formlabel}>Time</label>
             <input className={styles.pollinput} type="text" placeholder='00:00' />
           </span>
         </div>
         <div className={styles.smallinputs}>
-          <span>
+          <span className={styles.pollinputdate}>
             <label className={styles.formlabel}>End Date</label>
             <input className={styles.pollinput} type="date" />
           </span>
-          <span>
+          <span className={styles.pollinputtime}>
             <label className={styles.formlabel}>Time</label>
             <input className={styles.pollinput} type="text" placeholder='00:00' />
           </span>
