@@ -40,7 +40,7 @@ function Firstslide() {
         </div>
         <button onClick={skiptosecond} className={styles.nxtBtn}>Next</button>
       </div>
-      <Link to='/signup'><p className={styles.skip}>Skip</p></Link>
+      <Link className={styles.linking} to='/signup'><p className={styles.skip}>Skip</p></Link>
     </div>
     )}
 
@@ -59,7 +59,7 @@ function Firstslide() {
         </div>
         <button onClick={skiptothird} className={styles.nxtBtn}>Next</button>
       </div>
-      <Link to='/signup'><p className={styles.skip}>Skip</p></Link>
+      <Link className={styles.linking} to='/signup'><p className={styles.skip}>Skip</p></Link>
     </div>
     )}
 
@@ -79,7 +79,7 @@ function Firstslide() {
         <Link to='/signup'><button className={styles.createBtn}>Create Account</button></Link>
         <Link to='/login'><button className={styles.nxtBtn}>Log In</button></Link>
       </div>
-      <Link to='/signup'><p className={styles.skip}>Skip</p></Link>
+      <Link className={styles.linking} to='/signup'><p className={styles.skip}>Skip</p></Link>
     </div>
     )}
     </>

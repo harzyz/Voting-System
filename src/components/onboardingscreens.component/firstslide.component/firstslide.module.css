@@ -5,9 +5,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding-bottom: 50px;
   padding-top: 50px;
+}
+.linking{
+  text-decoration: none;
+  color: #000;
 }
 .onboardingimage1{
   width: 400px;

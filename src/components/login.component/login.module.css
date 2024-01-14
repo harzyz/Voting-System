@@ -63,6 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .createforminputs{
   width: 342px;
@@ -81,7 +82,7 @@
   right: 15px;
   font-size: 20px;
 }
-.createform input::placeholder{
+.createforminputs::placeholder{
   font-family: 'Inter';
   font-size: 15px;
 }
@@ -98,10 +99,11 @@
   font-size: 13px;
   font-weight: 500;
 }
-/* .remember{
-  width: 10px;
-  height: 10px;
-} */
+.remember{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
 @media screen and (max-width: 450px) {
   .wrapper{
     padding: 20px 15px 20px 15px;
@@ -112,7 +114,7 @@
   .createh1{
     font-size: 40px;
   }
-  .createform input{
+  .createforminputs{
     width: 100%;
   }
   .createform button{
