@@ -30,7 +30,7 @@ function Createaccount() {
             {showConfirmpassword ? <FaEye onClick={()=> setShowConfirmPassword(false)} className={styles.showicon} /> :
             <FaEyeSlash onClick={()=> setShowConfirmPassword(true)} className={styles.showicon} />}
           </div>
-          <button type='submit'>Create Account</button>
+          <Link to='/createpoll'><button type='submit'>Create Account</button></Link>        
           <p className={styles.createp}>Already have an account? <Link to='/login' style={{color: '#0CBB5C'}}>Log In</Link></p>
         </form>
       </div>

@@ -27,8 +27,9 @@
   align-items: center;
   border: 1px solid #0CBB5C;
   width: 155px;
-  height: 35px;
+  height: 45px;
   border-radius: 10px;
+  padding: 15px 10px 15px 10px;
 }
 .usertype button{
   border-radius: 15px;
@@ -108,5 +109,8 @@
   }
   .showicon{
     font-size: 20px;
+  }
+  .usertype{
+    padding: 0;
   }
 }

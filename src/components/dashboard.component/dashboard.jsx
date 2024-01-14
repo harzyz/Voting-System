@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom' 
 import styles from './dashboard.module.css'
 import Sidebar from '../sidebar.component/sidebar'
 import Search from '../search.component/search'
@@ -14,15 +15,14 @@ import Statisticsoptions from '../statisticsoptions.component/statisticsoptions'
 import Votingended from '../votingended.component\'/votingended'
 import Profile from '../profile.component/profile'
 
-function Dashboard() {
+function Dashboard({children}) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.sidebar}>
         <Sidebar />
       </div>
       <div className={styles.content}>
-        <Search />
-        <Profile />
+        {children}
       </div>
     </div>
   )

@@ -38,7 +38,7 @@ function Login() {
             <label className={styles.remember}> <input type="checkbox" /> Remember Me</label>
             <p>Forgot Password?</p>
           </div>
-          <button type="submit">Log In</button>
+          <Link to='/createpoll'><button type="submit">Log In</button></Link>
           <p className={styles.createp}>
             Don't have an account?
             <Link to='/signup' style={{ color: "#0CBB5C" }}> Create Account</Link>

@@ -9,6 +9,8 @@ import Homepage from './components/onboardingscreens.component/homepage.componen
 import Phoneverication from './components/phoneverification.component/phoneverication';
 import Success from './components/successpage.component/success';
 import './index.css';
+import Createpoll from "./components/createpoll.component/createpoll";
+import CreateAPoll from "./components/createapoll.component/createapoll";
 
 function App() {
   return (
@@ -19,6 +21,23 @@ function App() {
           <Route path="/login"  element={<Login />} />
           <Route path="/signup"  element={<Createaccount />} />
           <Route path="/onboarding"  element={<Firstslide />} />
+          {/* <Route path="/dashboard"  element={<Dashboard />} /> */}
+          <Route
+              path="/createpoll"
+              element={
+                <Dashboard>
+                  <Createpoll />
+                </Dashboard>
+              }
+            />
+          <Route
+              path="/createapoll"
+              element={
+                <Dashboard>
+                  <CreateAPoll />
+                </Dashboard>
+              }
+            />
         </Routes>
       </Router>
       {/* <Navbar />
