@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import styles from "./polluploads.module.css";
 import { LuUpload } from "react-icons/lu";
+import { Link } from "react-router-dom/dist";
 
 function Polluploads() {
   const inputRef = useRef(null);
@@ -79,9 +80,11 @@ function Polluploads() {
             </button>
           </div>
         </div>
-        <button className={styles.pollbtn} type="submit">
-          Add A File
-        </button>
+        <Link to='/uploadfiles'>
+          <button className={styles.pollbtn} type="submit">
+            Add A File
+          </button>
+        </Link>
       </form>
     </div>
   );

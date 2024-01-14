@@ -62,12 +62,12 @@
   height: 65px;
   color: #FFF;
 }
-/* .pollinputdate{
+.pollinputdate{
   width: 50%;
 }
 .pollinputtime{
   width: 50%;
-} */
+}
 @media screen and (max-width: 450px) {
   .wrapper{
     width: 100%;

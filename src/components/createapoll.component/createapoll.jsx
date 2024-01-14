@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import styles from './createapoll.module.css'
 import { LuUpload } from "react-icons/lu";
+import { Link } from 'react-router-dom/dist';
 
 function CreateAPoll() {
   const inputRef = useRef(null);
@@ -46,7 +47,7 @@ function CreateAPoll() {
         </div>
         <label className={styles.formlabel}>Voting Restrictions</label>
         <input className={styles.pollinput} type="text" />
-        <button className={styles.pollbtn} type='submit'>Create A Poll</button>
+        <Link to='/pollupload'><button className={styles.pollbtn} type='submit'>Create A Poll</button></Link>
       </form>
     </div>
   )

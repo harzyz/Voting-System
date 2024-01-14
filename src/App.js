@@ -11,6 +11,8 @@ import Success from './components/successpage.component/success';
 import './index.css';
 import Createpoll from "./components/createpoll.component/createpoll";
 import CreateAPoll from "./components/createapoll.component/createapoll";
+import Polluploads from "./components/polluploads.component/polluploads";
+import Uploadfiles from "./components/uploadfiles.component/uploadfiles";
 
 function App() {
   return (
@@ -35,6 +37,22 @@ function App() {
               element={
                 <Dashboard>
                   <CreateAPoll />
+                </Dashboard>
+              }
+            />
+          <Route
+              path="/pollupload"
+              element={
+                <Dashboard>
+                  <Polluploads />
+                </Dashboard>
+              }
+            />
+          <Route
+              path="/uploadfiles"
+              element={
+                <Dashboard>
+                  <Uploadfiles />
                 </Dashboard>
               }
             />
