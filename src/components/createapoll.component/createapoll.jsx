@@ -2,6 +2,9 @@ import { useRef } from 'react';
 import styles from './createapoll.module.css'
 import { LuUpload } from "react-icons/lu";
 import { Link } from 'react-router-dom/dist';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { SlCalender } from "react-icons/sl";
 
 function CreateAPoll() {
   const inputRef = useRef(null);
@@ -13,7 +16,7 @@ function CreateAPoll() {
 
   return (
     <div className={styles.wrapper}>
-      <h2 className={styles.pollh2}>Create A Poll</h2>
+      <h1 className={styles.pollh2}>Create A Poll</h1>
       <p>Fill in the fields belows to create a poll</p>
       <form className={styles.pollform}>
         <label className={styles.formlabel}>Poll Title</label>
@@ -28,7 +31,9 @@ function CreateAPoll() {
         <div className={styles.smallinputs}>
           <span className={styles.pollinputdate}>
             <label className={styles.formlabel}>Start Date</label>
-            <input className={styles.pollinput} type="date" />
+            <div className={styles.datepicker}><DatePicker className={styles.pollinputred} placeholderText="dd/mm/yyyy" />
+            <SlCalender className={styles.callender} />
+            </div>
           </span>
           <span className={styles.pollinputtime}>
             <label className={styles.formlabel}>Time</label>
@@ -38,7 +43,9 @@ function CreateAPoll() {
         <div className={styles.smallinputs}>
           <span className={styles.pollinputdate}>
             <label className={styles.formlabel}>End Date</label>
-            <input className={styles.pollinput} type="date" />
+            <div className={styles.datepicker}><DatePicker className={styles.pollinputred} placeholderText="dd/mm/yyyy" />
+            <SlCalender className={styles.callender} />
+            </div>
           </span>
           <span className={styles.pollinputtime}>
             <label className={styles.formlabel}>Time</label>

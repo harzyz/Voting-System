@@ -1,5 +1,6 @@
 .wrapper{
   font-family: 'Inter';
+  height: 100vh;
 }
 .pollform{
   display: flex;
@@ -9,6 +10,13 @@
 }
 .pollinput{
   width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.pollinputred{
+  width: 245px;
   height: 50px;
   border: none;
   border-radius: 10px;
@@ -44,6 +52,11 @@
   font-size: 16px;
   font-weight: 500;
 }
+.pollinputred::placeholder{
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+}
 .imguploadicon{
   font-size: 30px;
 }
@@ -52,6 +65,7 @@
   justify-content: space-between;
   margin-top: 10px;
   width: 100%;
+  gap: 30px;
 }
 .pollbtn{
   margin: 10px auto;
@@ -68,13 +82,22 @@
 .pollinputtime{
   width: 50%;
 }
+.datepicker{
+  position: relative;
+  /* border: 1px solid red; */
+}
+.callender{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
 @media screen and (max-width: 450px) {
   .wrapper{
     width: 100%;
     padding: 0px 10px;
   }
   .pollh2{
-    font-size: 16px;
+    font-size: 30px;
   }
   label{
     font-size: 16px;
@@ -88,5 +111,8 @@
   }
   .smallinputs{
     gap: 20px;
+  }
+  .pollinputred{
+    width: 100%;
   }
 }
