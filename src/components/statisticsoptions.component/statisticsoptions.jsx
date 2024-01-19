@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import styles from './statisticsoptions.module.css'
 import { statisticsoptiondata } from './statisticsoptionsdata'
+import { FaArrowLeft } from 'react-icons/fa';
+import Navigation from '../navigation.component/navigation';
 
 function Statisticsoptions() {
   const [selectedOption, setSelectedOption] = useState([])
@@ -23,6 +25,7 @@ function Statisticsoptions() {
 
   return (
     <div className={styles.wrapper}>
+      <Navigation label='Nigeria 2023 Statistics' />
       <div className={styles.contain}>
         {statisticsoptiondata.map((item, index)=>(
           <div className={`${styles.selection} ${selectedOption.includes(index) ? styles.hilighted : ''}`}
@@ -31,8 +34,8 @@ function Statisticsoptions() {
             <input type="checkbox" 
             checked={selectedOption.includes(index)}
             onChange={() => handleOptionToggle(index)}
-            name="" id="" />
-            <h3>{item.category}</h3>
+            className={styles.checkmark} />
+            <h3 className={styles.categoryh3}>{item.category}</h3>
           </div>
         ))}
       </div>

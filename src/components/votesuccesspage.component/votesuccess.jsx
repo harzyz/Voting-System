@@ -1,5 +1,6 @@
 import styles from './votesuccess.module.css'
 import successicon from '../../images/succesicon.png'
+import { Link } from 'react-router-dom'
 
 function Votesuccess() {
   return (
@@ -13,8 +14,8 @@ function Votesuccess() {
         <h1 className={styles.verified}>Vote Successful</h1>
         <p className={styles.successp}>Your vote has been successfully submitted</p>
         </span>
-        <button className={styles.createBtn}>Done</button>
-        <button className={styles.votebtn}>Check Live Stat</button>
+        <Link to='/createpoll'><button className={styles.createBtn}>Done</button></Link>
+        <Link to='/statistics'><button className={styles.votebtn}>Check Live Stat</button></Link>
       </div>
     </div>
   )

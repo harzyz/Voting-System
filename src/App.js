@@ -17,6 +17,7 @@ import Ongoingvotesdetails from "./components/ongoingvotesdetail.component/ongoi
 import Candidatesdetails from "./components/candidatedetails.component/candidatesdetails";
 import Notfound from "./components/notfound.component/notfound";
 import Votesuccess from "./components/votesuccesspage.component/votesuccess";
+import Statisticsoptions from "./components/statisticsoptions.component/statisticsoptions";
 
 function App() {
   return (
@@ -105,6 +106,14 @@ function App() {
               element={
                 <Dashboard>
                   <Votesuccess />
+                </Dashboard>
+              }
+            />
+          <Route
+              path="/statistics"
+              element={
+                <Dashboard>
+                  <Statisticsoptions />
                 </Dashboard>
               }
             />
