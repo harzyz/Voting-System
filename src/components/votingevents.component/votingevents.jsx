@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './votingevents.module.css'
 import { VotingEventData } from './votingeventsdata'
 
@@ -23,7 +24,7 @@ function Votingevents() {
         </div>
         ))}
       </div>
-      <button className={styles.uploadbtn}>Join A Vote</button>
+      <Link to='/ongoingvote'><button className={styles.uploadbtn}>Join A Vote</button></Link>
     </div>
   )
 }

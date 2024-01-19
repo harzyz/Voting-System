@@ -12,7 +12,7 @@ function Createpoll() {
         successfully Let's Get Started
       </p>
       <Link to='/createapoll'><button className={styles.pollbtn}>Create A Poll</button></Link>
-      <button className={styles.votebtn}>Join A Vote</button>
+      <Link to='/joinavote'><button className={styles.votebtn}>Join A Vote</button></Link> 
     </div>
   );
 }

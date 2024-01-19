@@ -1,6 +1,7 @@
 .wrapper{
   font-family: 'Inter';
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
 }
 .pollform{
   display: flex;
@@ -68,13 +69,16 @@
   gap: 30px;
 }
 .pollbtn{
-  margin: 10px auto;
+  
   border-radius: 10px;
   border: 1px solid #0CBB5C;
   background-color: #0CBB5C;
   width: 342px;
   height: 65px;
   color: #FFF;
+}
+.pollbtnlink{
+  margin: 10px auto;
 }
 .pollinputdate{
   width: 50%;
@@ -91,15 +95,21 @@
   right: 10px;
   top: 15px;
 }
+.stopwatch{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 25px;
+}
 @media screen and (max-width: 450px) {
   .wrapper{
     width: 100%;
     padding: 0px 10px;
   }
   .pollh2{
-    font-size: 30px;
+    font-size: 20px;
   }
-  label{
+  .formlabel{
     font-size: 16px;
   }
   .pollform{
@@ -107,12 +117,16 @@
   }
   .pollbtn{
     width: 300px;
-    margin: 10px auto;
   }
   .smallinputs{
     gap: 20px;
   }
   .pollinputred{
     width: 100%;
+  }
+}
+@media (min-width: 450px) {
+  .wrapper {
+    height: 100vh;
   }
 }

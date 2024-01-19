@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 .description{
   width: 100%;
@@ -24,6 +27,44 @@
   background-color: #0CBB5C;
   border: 1px solid #0CBB5C;
 }
+.content{
+  width: 736px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warning{
+  color: #D62828;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 500;
+}
+.btncontain{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 68px;
+  padding-top: 20px;
+}
+.confirmbtn{
+  width: 147px;
+  height: 50px;
+  border-radius: 10px;
+  background: #0CBB5C;
+  border: none;
+  color: #FFF;
+}
+.cancelbtn{
+  width: 147px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #D62828;
+  background: rgba(255, 255, 255, 0.60);
+  color: #D62828;
+}
 @media screen and (max-width: 450px) {
   .candidateiamge{
     width: 100%;
@@ -32,5 +73,21 @@
   .castvotebtn{
     width: 274px;
     height: 53px;
+  }
+  .warning{
+    font-size: 16px;
+  }
+  .btncontain{
+    gap: 25px;
+  }
+  .confirmbtn{
+    width: 90px;
+  }
+  .cancelbtn{
+    width: 90px;
+  }
+  .content{
+    width: 284px;
+    height: 216px;
   }
 }

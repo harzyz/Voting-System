@@ -1,9 +1,9 @@
 .wrapper{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
-  /* padding-top: 80px; */
   padding-bottom: 20px;
 }
 .createh1{
@@ -14,7 +14,7 @@
 }
 .createh3{
   color: #000;
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 24px;
 }
 .contain{

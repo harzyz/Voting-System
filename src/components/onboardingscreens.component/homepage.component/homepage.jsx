@@ -9,10 +9,10 @@ function Homepage() {
   return (
     <div className={styles.wrapper}>
       <Navbar />
-      <div style={{ textAlign: 'center' }}>
-      <h6 className={styles.homeh6}>Welcome to</h6>
-      <h1 className={styles.homeh1}>Elect.NG</h1>
-      <h6 className={styles.homeh6}>An online voting app</h6>
+      <div style={{ textAlign: 'center', zIndex: '4' }}>
+        <h6 className={styles.homeh6}>Welcome to</h6>
+        <h1 className={styles.homeh1}>Elect.NG</h1>
+        <h6 className={styles.homeh6}>An online voting app</h6>
       </div>
       <img className={styles.ballot} src={ballot} alt="" />
       <Link to='/onboarding'><button className={styles.voterbtn}>Register as a voter</button></Link>

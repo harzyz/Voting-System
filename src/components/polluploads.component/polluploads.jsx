@@ -80,7 +80,7 @@ function Polluploads() {
             </button>
           </div>
         </div>
-        <Link to='/uploadfiles'>
+        <Link className={styles.pollbtnlink} to='/uploadfiles'>
           <button className={styles.pollbtn} type="submit">
             Add A File
           </button>

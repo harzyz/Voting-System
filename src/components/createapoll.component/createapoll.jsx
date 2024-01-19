@@ -4,7 +4,9 @@ import { LuUpload } from "react-icons/lu";
 import { Link } from 'react-router-dom/dist';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import TimePicker from 'react-time-picker';
 import { SlCalender } from "react-icons/sl";
+import { CiStopwatch } from "react-icons/ci";
 
 function CreateAPoll() {
   const inputRef = useRef(null);
@@ -37,7 +39,9 @@ function CreateAPoll() {
           </span>
           <span className={styles.pollinputtime}>
             <label className={styles.formlabel}>Time</label>
-            <input className={styles.pollinput} type="text" placeholder='00:00' />
+            <div className={styles.datepicker}><input className={styles.pollinput} type="text" placeholder='00:00' />
+            <CiStopwatch className={styles.stopwatch} />
+            </div>
           </span>
         </div>
         <div className={styles.smallinputs}>
@@ -49,12 +53,14 @@ function CreateAPoll() {
           </span>
           <span className={styles.pollinputtime}>
             <label className={styles.formlabel}>Time</label>
-            <input className={styles.pollinput} type="text" placeholder='00:00' />
+            <div className={styles.datepicker}><input className={styles.pollinput} type="text" placeholder='00:00' />
+            <CiStopwatch className={styles.stopwatch} />
+            </div>
           </span>
         </div>
         <label className={styles.formlabel}>Voting Restrictions</label>
         <input className={styles.pollinput} type="text" />
-        <Link to='/pollupload'><button className={styles.pollbtn} type='submit'>Create A Poll</button></Link>
+        <Link className={styles.pollbtnlink} to='/pollupload'><button className={styles.pollbtn} type='submit'>Create A Poll</button></Link>
       </form>
     </div>
   )

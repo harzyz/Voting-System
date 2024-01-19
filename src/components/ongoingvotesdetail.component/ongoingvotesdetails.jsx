@@ -1,6 +1,7 @@
 import styles from './ongoingvotesdetails.module.css'
 import bg from '../../images/election 1.png'
 import { ongoingvotedetails } from './ongoingvotesdetailsdata'
+import { Link } from 'react-router-dom'
 
 function Ongoingvotesdetails() {
   return (
@@ -10,8 +11,8 @@ function Ongoingvotesdetails() {
       </div>
       <div className={styles.ongoingstats}>
         <span>
-          <h2>Ongoing votes</h2>
-          <h2>40,320,261 votes</h2>
+          <p className={styles.ongoingp}>Ongoing votes</p>
+          <p className={styles.ongoingp}>40,320,261 votes</p>
         </span>
       </div>
       <div className={styles.candidates}>
@@ -26,7 +27,7 @@ function Ongoingvotesdetails() {
               <p className={styles.eventp}>{item.partyname}</p>
             </div>
           </div>
-          <button className={styles.votedetailsbtn}>Vote</button>
+          <Link to={`/ongoingvote/${item.id}`}><button className={styles.votedetailsbtn}>Vote</button></Link>
         </div>
         ))}
       </div>

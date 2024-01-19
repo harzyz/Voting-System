@@ -1,0 +1,70 @@
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.contain{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.verified{
+  font-family: 'Lexend';
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0;
+}
+.successp{
+  font-family: Inter;
+  font-size: 16px;
+  margin: 0;
+}
+.successh1{
+  color: #0CBB5C;
+  margin: 0;
+  text-align: center;
+  font-family: 'Lexend';
+  font-size: 64px;
+}
+.createBtn{
+  border: none;
+  background-color: #0CBB5C;
+  color: #FFF;
+  border-radius: 10px;
+  width: 338px;
+  height: 54px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+@media screen and (max-width: 450px){
+  .successh1{
+    display: none;
+  }
+  .successp{
+    font-size: 12px;
+  }
+  .verified{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .iconcontain{
+    width: 150px;
+    height: 150px;
+  }
+  .iconcontain img{
+    width: 100%;
+    height: 100%;
+  }
+  .createBtn{
+    width: 270px;
+  }
+}

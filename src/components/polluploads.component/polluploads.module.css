@@ -1,6 +1,7 @@
 .wrapper{
   font-family: 'Inter';
   margin: 0 auto;
+  height: 100%;
 }
 .pollform{
   display: flex;
@@ -42,13 +43,15 @@
   font-weight: 500;
 }
 .pollbtn{
-  margin: 10px auto;
   border-radius: 10px;
   border: 1px solid #0CBB5C;
   background-color: #0CBB5C;
   width: 342px;
   height: 65px;
   color: #FFF;
+}
+.pollbtnlink{
+  margin: 10px auto;
 }
 .pollinput::placeholder{
   font-family: 'Inter';
@@ -78,9 +81,9 @@
     padding: 0px 10px;
   }
   .pollh2{
-    font-size: 16px;
+    font-size: 20px;
   }
-  label{
+  .formlabel{
     font-size: 16px;
   }
   .pollform{
@@ -88,7 +91,6 @@
   }
   .pollbtn{
     width: 300px;
-    margin: 10px auto;
   }
   .pollimgupload{
     width: 160px;

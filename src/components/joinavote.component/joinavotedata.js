@@ -8,7 +8,8 @@ export const JoinavoteData =[
     id: 1,
     image: `${coatofarms}`,
     event: 'Nigeria 2023',
-    alternative: 'Nigeria Election'
+    alternative: 'Nigeria Election',
+    link: '/nigeria2023'
   },
   {
     id: 2,

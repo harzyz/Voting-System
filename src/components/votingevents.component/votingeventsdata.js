@@ -1,6 +1,6 @@
 import peterobi from '../../images/peter obi 2.png'
 import obasanjo from '../../images/obasanjo 2 2.png'
-import tinubu from '../../images/bola ahmed tinubu 2.png'
+import tinubu from '../../images/bola ahmed tinubu 1.png'
 import atiku from '../../images/atiku 2.png'
 import pdp from '../../images/PDP 1.png'
 import apc from '../../images/APC 1.png'

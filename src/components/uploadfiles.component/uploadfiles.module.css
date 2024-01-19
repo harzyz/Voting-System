@@ -1,3 +1,15 @@
+.wrapper{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contain{
+  width: 100%;
+  height: 100%;
+}
 .candidateswrapper{
   display: flex;
   flex-direction: column;
@@ -28,13 +40,12 @@
   font-weight: 500;
 }
 .uploadh2{
-  color: rgba(0, 0, 0, 0.60);
+  color: 000;
   font-family: 'Inter';
   font-size: 24px;
   font-weight: 500;
 }
 .uploadbtn{
-  margin: 10px auto;
   border-radius: 10px;
   border: 1px solid #0CBB5C;
   background-color: #0CBB5C;
@@ -42,9 +53,14 @@
   height: 65px;
   color: #FFF;
 }
+.uploadbtnlink{
+  margin: 10px auto;
+}
 @media screen and (max-width: 750px) {
   .uploadbtn{
     width: 300px;
-    margin: 10px auto;
+  }
+  .uploadh2{
+    font-size: 16px;
   }
 }

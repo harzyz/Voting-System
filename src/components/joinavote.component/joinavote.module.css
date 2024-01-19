@@ -1,8 +1,14 @@
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #FFF;
+}
 .currentuser{
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-color: #92E3A9;
+  background-color: #92e3a94a;;
   color: #0CBB5C;
   text-align: center;
   font-family: 'Lexend';
@@ -12,24 +18,28 @@
 .user{
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.81);
+  gap: 22px;
+}
+.user p{
+  color: #000;
   font-family: 'Inter';
   font-size: 24px;
-  font-weight: 400;
-}
-.user span{
-  color: #0CBB5C;
-  font-weight: 600;
+  font-weight: 500;
 }
 .events{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  width: 100%;
+}
+.eventlink{
+  text-decoration: none;
 }
 .eventcontainer{
   display: flex;
   align-items: center;
   gap: 50px;
+  width: 100%;
 }
 .eventimage{
   width: 131px;
@@ -60,14 +70,15 @@
 .interfaceactions{
   display: flex;
   gap: 400px;
+  width: 100%;
 }
-.interfaceactions h2{
+.recent{
   color: #000;
   font-family: 'Inter';
   font-size: 22px;
   font-weight: 500;
 }
-.interfaceactions h2:nth-child(2){
+.seeall{
   color: rgba(12, 187, 92, 0.40);
   font-family: 'Inter';
   font-size: 22px;
@@ -77,5 +88,18 @@
   .interfaceactions{
     justify-content: space-between;
     gap: 0;
+  }
+  .eventcontainer{
+    gap: 15px;
+  }
+  .eventimage{
+    width: 114px;
+    height: 100px;
+  }
+  .user p{
+    font-size: 16px;
+  }
+  .sectiontitle, .recent, .seeall, .eventtitle{
+    font-size: 16px;
   }
 }

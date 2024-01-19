@@ -1,3 +1,8 @@
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
 .eventh1{
   color: #000;
   font-family: 'Inter';
@@ -67,6 +72,15 @@
     padding: 0 15px;
     /* align-content: center; */
   }
+  .eventh1{
+    font-size: 16px;
+  }
+  .eventh2{
+    font-size: 16px;
+  }
+  .eventp{
+    font-size: 12px;
+  }
   .eventcontainer{
     width: 100%;
   }
@@ -75,6 +89,6 @@
   }
   .uploadbtn{
     width: 300px;
-    margin: 10px auto;
+    margin: 30px auto 0px auto;
   }
 }
