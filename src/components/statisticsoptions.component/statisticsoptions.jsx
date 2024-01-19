@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import styles from './statisticsoptions.module.css'
 import { statisticsoptiondata } from './statisticsoptionsdata'
-import { FaArrowLeft } from 'react-icons/fa';
 import Navigation from '../navigation.component/navigation';
 
 function Statisticsoptions() {

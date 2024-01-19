@@ -1,5 +1,6 @@
 import styles from './pollsuccesspage.module.css'
 import successicon from '../../images/succesicon.png'
+import { Link } from 'react-router-dom'
 
 function PollSuccess() {
   return (
@@ -13,7 +14,7 @@ function PollSuccess() {
         <h1 className={styles.verified}>Poll Created Successfully</h1>
         {/* <p className={styles.successp}>Welcome to Elect.Ng</p> */}
         </span>
-        <button className={styles.createBtn}>Done</button>
+        <Link to='/createpoll'><button className={styles.createBtn}>Done</button></Link>
       </div>
     </div>
   )
