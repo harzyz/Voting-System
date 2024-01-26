@@ -30,6 +30,8 @@
   height: 46px;
   padding: 10px 10px;
   border: none;
+  color: #FFF;
+  font-family: 'Lexend';
 }
 .registerbtn{
   border-radius: 30px;
@@ -39,6 +41,8 @@
   padding: 10px 10px;
   border: 1px solid #FFF;
   z-index: 200;
+  color: #FFF;
+  font-family: 'Lexend';
 }
 @media screen and (max-width: 450px) {
  .navwrapper{
