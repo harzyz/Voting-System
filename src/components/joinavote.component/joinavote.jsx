@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import styles from './joinavote.module.css'
 import { JoinavoteData } from './joinavotedata'
+import Search from '../search.component/search'
 
 function Joinavote() {
   return (
     <div className={styles.wrapper}>
+      <Search />
       <div className={styles.user}>
         <div className={styles.currentuser}>J</div> 
         <p> Hello James</p> 

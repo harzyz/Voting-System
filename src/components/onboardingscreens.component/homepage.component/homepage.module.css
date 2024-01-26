@@ -54,7 +54,7 @@
 }
 .topright{
   position: absolute;
-  top: 0px;
+  top: -2px;
   right: 0;
   width: 380px;
   height: 400px;

@@ -31,7 +31,7 @@
   border-radius: 10px;
   padding: 15px 10px 15px 10px;
 }
-.usertype button{
+.userbtn{
   border-radius: 15px;
   background-color: #0CBB5C;
   border: none;
@@ -39,16 +39,40 @@
   width: 55px;
   padding: 2px 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.usertype button:nth-child(1){
   margin-right: -5px;
   z-index: 3;
 }
-.usertype button:nth-child(2){
+.userbtn2{
   border-radius: 15px;
   background-color: #FFF;
   border: 1px solid #0CBB5C;
   color: #0CBB5C;
+  width: 55px;
+  padding: 2px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-right: -5px;
+  z-index: 3;
+}
+.adminbtn{
+  color: #FFF;
+  width: 55px;
+  padding: 2px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 15px;
+  background-color: #FFF;
+  border: 1px solid #0CBB5C;
+  color: #0CBB5C;
+  width: 55px;
+}
+.adminbtn2{
+  color: #FFF;
+  width: 55px;
+  padding: 2px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 15px;
+  background-color: #0CBB5C;
+  border: none;
+  color: #FFF;
   width: 55px;
 }
 .createform{
